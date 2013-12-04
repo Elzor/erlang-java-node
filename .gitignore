@@ -1,0 +1,3 @@
+priv/*.jar
+priv/*.so
+.eunit

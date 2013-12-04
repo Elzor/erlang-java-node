@@ -1,0 +1,18 @@
+{application, javanode,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { javanode_app, []}},
+  {env, [
+            {java_cmd, "jNodeRel.jar jnode.Main"},
+            {java_node, java_node},
+            {java_mbox, java_mbox},
+            {java_epmd_port, 15000},
+            {java_conf, "jnode.config"}
+        ]}
+ ]}.
